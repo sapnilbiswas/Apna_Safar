@@ -1,0 +1,25 @@
+.txt1{
+    color: darkorange;
+    margin-top: 5%;
+    margin-left: 42%;
+    
+}
+.heading{
+    font-size: 200%;
+    margin-left: 37%;
+    margin-top: -0.1%;
+}
+.txt2{
+    margin-left: 32%;
+    font-size: larger;
+    margin-top: -0.2%;
+    color: gray;
+}
+.cards{
+    border: 1px solid;
+    height: 40%;
+    width: 40%;
+}
+.offers{
+    height: 100vh;
+}
