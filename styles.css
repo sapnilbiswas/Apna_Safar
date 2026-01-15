@@ -1,3 +1,126 @@
+
+/* <HERO SECTION STYLE> */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      height: 83vh;
+      position: relative;
+    }
+
+    .carousel img {
+      height: 83vh;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .dark {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+
+    /* CONTENT WIDTH INCREASED */
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+      width: 95%;
+      max-width: 1250px;   /* KEY CHANGE */
+      z-index: 2;
+    }
+
+    .content h1 {
+      font-size: 57px;
+      margin-bottom: 22px;
+    }
+
+    .content p {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    /* FORM BOX – WIDE & SPACIOUS */
+    .form-box {
+      background: #fff;
+      padding: 40px;       /* MORE SPACE */
+      border-radius: 26px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* WIDE LAYOUT */
+      gap: 25px;
+      color: #000;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    /* TABS */
+    .tabs {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 15px;
+      border: 0.5px #F0F0F0;
+      background-color: #F0F0F0;
+      border-radius: 50px;
+    }
+
+    .tab {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      background: #f0f0f0;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.3s;
+    }
+
+    .tab:hover {
+      background: #ffffff;
+      box-shadow: 0px 0px 1px 2px #a1a0a0;
+    }
+
+    
+    
+
+    /* INPUTS – TALL & ROOMY */
+    .form-box input,
+    .form-box select {
+      padding: 20px 18px;
+      height: 65px;
+      border-radius: 16px;
+      border: none;
+      background: #f3f3f3;
+      font-size: 17px;
+    }
+
+    /* SEARCH BUTTON */
+    .search-btn {
+      grid-column: 1 / -1;
+      height: 70px;
+      padding: 20px;
+      background: linear-gradient(135deg, #315AFB, #9519FA);
+      color: #fff;
+      border: none;
+      border-radius: 22px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .search-btn i {
+      margin-right: 10px;
+    }
 *{
   box-sizing: border-box;
 }
