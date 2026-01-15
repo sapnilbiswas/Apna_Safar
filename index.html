@@ -6,9 +6,115 @@
   <title>Exclusive Deals</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<section class="offers">
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <div class="promo-content">
+            <span class="promo-text">
+                🎉 New Year Special: Get up to 50% OFF on International Flights! Use code: NEWYEAR50
+            </span>
+            <button class="promo-close" onclick="closePromoBanner()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+
+                <!-- Logo -->
+                <div class="logo" onclick="navigateTo('home')">
+                    <div class="logo-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <span class="logo-text">Apna Safar</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <button class="nav-item" onclick="navigateTo('home')" data-page="home">
+                        <i class="fas fa-plane"></i>
+                        <span>Flights</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('trains')" data-page="trains">
+                        <i class="fas fa-train"></i>
+                        <span>Trains</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('buses')" data-page="buses">
+                        <i class="fas fa-bus"></i>
+                        <span>Buses</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('hotels')" data-page="hotels">
+                        <i class="fas fa-hotel"></i>
+                        <span>Hotels</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('packages')" data-page="packages">
+                        <i class="fas fa-box"></i>
+                        <span>Packages</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('offers')" data-page="offers">
+                        <i class="fas fa-tag"></i>
+                        <span>Offers</span>
+                    </button>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="btn-login" onclick="navigateTo('login')">
+                        <i class="fas fa-user"></i>
+                        <span>Login</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileMenu">
+                <button class="nav-item-mobile" onclick="navigateTo('home'); toggleMobileMenu()">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('trains'); toggleMobileMenu()">
+                    <i class="fas fa-train"></i>
+                    <span>Trains</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('buses'); toggleMobileMenu()">
+                    <i class="fas fa-bus"></i>
+                    <span>Buses</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('hotels'); toggleMobileMenu()">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('packages'); toggleMobileMenu()">
+                    <i class="fas fa-box"></i>
+                    <span>Packages</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('offers'); toggleMobileMenu()">
+                    <i class="fas fa-tag"></i>
+                    <span>Offers</span>
+                </button>
+                <button class="btn-login-mobile" onclick="navigateTo('login'); toggleMobileMenu()">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    
+  
+  <section class="offers">
     <p class="heading">LIMITED TIME OFFER</p>
   <h1>Exclusive Deals & Offers</h1>
   <p class="subtitle">
@@ -63,6 +169,118 @@
 
   </div>
 </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand Column -->
+            <div class="footer-column brand-column">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <span class="logo-text">Apna Safar</span>
+                </div>
+
+                <p class="brand-description">
+                    Your trusted partner for memorable journeys. Book flights, hotels, and experiences with confidence.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3 class="column-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Careers</a></li>
+                    <li><a href="#" class="footer-link">Press</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                    <li><a href="#" class="footer-link">Gift Cards</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-column">
+                <h3 class="column-title">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Flight Booking</a></li>
+                    <li><a href="#" class="footer-link">Hotel Reservation</a></li>
+                    <li><a href="#" class="footer-link">Train Tickets</a></li>
+                    <li><a href="#" class="footer-link">Bus Booking</a></li>
+                    <li><a href="#" class="footer-link">Holiday Packages</a></li>
+                    <li><a href="#" class="footer-link">Travel Insurance</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h3 class="column-title">Contact Us</h3>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <a href="mailto:support@apnasafar.com" class="contact-link">
+                            support@apnasafar.com
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <a href="tel:+918001234568" class="contact-link">
+                            +91 1800 123 458
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <span class="contact-text">
+                            123 Travel Street,<br>
+                            Mumbai, India 400001
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright">
+                    © 2026 Apna Safar. All rights reserved.
+                </p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#" class="bottom-link">Privacy Policy</a></li>
+                    <li><a href="#" class="bottom-link">Terms of Service</a></li>
+                    <li><a href="#" class="bottom-link">Cookie Policy</a></li>
+                    <li><a href="#" class="bottom-link">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Floating Action Button -->
+        <button class="fab-button" aria-label="Add">
+            <i class="fas fa-plus"></i>
+        </button>
+
+    </footer>
+
+  <!-- Scripts -->
+    <script src="script.js"></script>
+
 
 </body>
 </html>
