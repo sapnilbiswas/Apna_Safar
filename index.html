@@ -3,284 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apna Safar</title>
-    <meta name="description" content="TravelWay - Your trusted partner for memorable journeys">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles-footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
+
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+
+<!--NAvbar -->
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <div class="promo-content">
+            <span class="promo-text">
+                🎉 New Year Special: Get up to 50% OFF on International Flights! Use code: NEWYEAR50
+            </span>
+            <button class="promo-close" onclick="closePromoBanner()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+
+                <!-- Logo -->
+                <div class="logo" onclick="navigateTo('home')">
+                    <div class="logo-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <span class="logo-text">Apna Safar</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <button class="nav-item" onclick="navigateTo('home')" data-page="home">
+                        <i class="fas fa-plane"></i>
+                        <span>Flights</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('trains')" data-page="trains">
+                        <i class="fas fa-train"></i>
+                        <span>Trains</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('buses')" data-page="buses">
+                        <i class="fas fa-bus"></i>
+                        <span>Buses</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('hotels')" data-page="hotels">
+                        <i class="fas fa-hotel"></i>
+                        <span>Hotels</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('packages')" data-page="packages">
+                        <i class="fas fa-box"></i>
+                        <span>Packages</span>
+                    </button>
+                    <button class="nav-item" onclick="navigateTo('offers')" data-page="offers">
+                        <i class="fas fa-tag"></i>
+                        <span>Offers</span>
+                    </button>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="btn-login" onclick="navigateTo('login')">
+                        <i class="fas fa-user"></i>
+                        <span>Login</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileMenu">
+                <button class="nav-item-mobile" onclick="navigateTo('home'); toggleMobileMenu()">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('trains'); toggleMobileMenu()">
+                    <i class="fas fa-train"></i>
+                    <span>Trains</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('buses'); toggleMobileMenu()">
+                    <i class="fas fa-bus"></i>
+                    <span>Buses</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('hotels'); toggleMobileMenu()">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('packages'); toggleMobileMenu()">
+                    <i class="fas fa-box"></i>
+                    <span>Packages</span>
+                </button>
+                <button class="nav-item-mobile" onclick="navigateTo('offers'); toggleMobileMenu()">
+                    <i class="fas fa-tag"></i>
+                    <span>Offers</span>
+                </button>
+                <button class="btn-login-mobile" onclick="navigateTo('login'); toggleMobileMenu()">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+            </nav>
+        </div>
+    </header>
 
     
-    <!-- Footer Section -->
+  
+  <section class="offers">
+    <p class="heading">LIMITED TIME OFFER</p>
+  <h1>Exclusive Deals & Offers</h1>
+  <p class="subtitle">
+    Save more on your next adventure with our special promotions
+  </p>
+
+  <div class="offers-flex">
+
+    <div class="offer-card blue">
+      <span class="badge blue">40% OFF</span>
+      <small class="label">EXCLUSIVE OFFER</small>
+      <h2>Weekend Getaway Special</h2>
+      <p>Up to 40% off on weekend hotel bookings</p>
+      <div class="card-footer">
+        <span>⏱ Valid till 31 Jan · <b>WEEKEND40</b></span>
+        <a href="#" class="grab.blue">Grab Deal →</a>
+      </div>
+    </div>
+
+    <div class="offer-card purple">
+      <span class="badge purple">₹2000 OFF</span>
+      <small class="label">EXCLUSIVE OFFER</small>
+      <h2>Flight Flash Sale</h2>
+      <p>Flat ₹2000 off on domestic flights</p>
+      <div class="card-footer">
+        <span>⏱ Valid till 25 Jan · <b>FLYNOW</b></span>
+        <a href="#">Grab Deal →</a>
+      </div>
+    </div>
+
+    <div class="offer-card orange">
+      <span class="badge orange">30% OFF</span>
+      <small class="label">EXCLUSIVE OFFER</small>
+      <h2>Early Bird Booking</h2>
+      <p>Book 30 days in advance & save big</p>
+      <div class="card-footer">
+        <span>⏱ Valid till 15 Feb · <b>EARLY30</b></span>
+        <a href="#">Grab Deal →</a>
+      </div>
+    </div>
+
+    <div class="offer-card green">
+      <span class="badge green">25% OFF</span>
+      <small class="label">EXCLUSIVE OFFER</small>
+      <h2>Family Package Deal</h2>
+      <p>Special rates for family bookings</p>
+      <div class="card-footer">
+        <span>⏱ Valid till 28 Jan · <b>FAMILY25</b></span>
+        <a href="#">Grab Deal →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="testimonials-inner">
+        <div class="testimonials-header">
+            <span class="tag">" TESTIMONIALS</span>
+            <h2>What Our Travelers Say</h2>
+            <p>Join thousands of happy travelers who trust us for their journeys</p>
+        </div>
+        <div class="cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="quote-icon">
+                    <svg class="quote-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <!-- First ending quote -->
+                        <path fill="#ffffff"
+                        d="M18 12
+                        C26 12 30 18 30 26
+                        C30 34 24 40 16 40
+                        C14 40 12 39 12 39
+                        C16 36 18 32 18 28
+                        C18 26 17 24 15 22
+                        C12 20 10 18 10 16
+                        C10 14 13 12 18 12Z"/>
+                        <path fill="#ffffff"
+                        d="M38 12
+                        C46 12 50 18 50 26
+                        C50 34 44 40 36 40
+                        C34 40 32 39 32 39
+                        C36 36 38 32 38 28
+                        C38 26 37 24 35 22
+                        C32 20 30 18 30 16
+                        C30 14 33 12 38 12Z"/>
+                    </svg>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p class="text">"Absolutely amazing experience! The booking process was seamless and the deals were unbeatable. Saved over ₹15,000 on my Maldives trip!</p>
+                <div class="user">
+                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/3y9bJJLK/50-img-32.jpg" alt="Priya Sharma"></a>
+                    <div>
+                        <h4>Priya Sharma</h4>
+                        <span>Mumbai, India</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="quote-icon">
+                    <svg class="quote-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff"
+                        d="M18 12
+                        C26 12 30 18 30 26
+                        C30 34 24 40 16 40
+                        C14 40 12 39 12 39
+                        C16 36 18 32 18 28
+                        C18 26 17 24 15 22
+                        C12 20 10 18 10 16
+                        C10 14 13 12 18 12Z"/>
+                        <path fill="#ffffff"
+                        d="M38 12
+                        C46 12 50 18 50 26
+                        C50 34 44 40 36 40
+                        C34 40 32 39 32 39
+                        C36 36 38 32 38 28
+                        C38 26 37 24 35 22
+                        C32 20 30 18 30 16
+                        C30 14 33 12 38 12Z"/>
+                    </svg>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p class="text">"Best travel platform I have used. The customer support was exceptional and helped me plan the perfect family vacation to Switzerland."</p>
+                <div class="user">
+                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/bjPJd58M/50-img-12.jpg" alt="Rahul Verma"></a>
+                    <div>
+                        <h4>Rahul Verma</h4>
+                        <span>Delhi, India</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="quote-icon">
+                    <svg class="quote-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff"
+                        d="M18 12
+                        C26 12 30 18 30 26
+                        C30 34 24 40 16 40
+                        C14 40 12 39 12 39
+                        C16 36 18 32 18 28
+                        C18 26 17 24 15 22
+                        C12 20 10 18 10 16
+                        C10 14 13 12 18 12Z"/>
+                        <path fill="#ffffff"
+                        d="M38 12
+                        C46 12 50 18 50 26
+                        C50 34 44 40 36 40
+                        C34 40 32 39 32 39
+                        C36 36 38 32 38 28
+                        C38 26 37 24 35 22
+                        C32 20 30 18 30 16
+                        C30 14 33 12 38 12Z"/>
+                    </svg>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p class="text">"The hotel recommendations were spot-on! Found the perfect boutique hotel in Bali. Will definitely use ApnaSafar for all future trips."</p>
+                <div class="user">
+                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/fdWf9SN2/50-img-47.jpg" alt="Ananya Patel"></a>
+                    <div>
+                        <h4>Ananya Patel</h4>
+                        <span>Bangalore, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Stats -->
+        <div class="stats">
+            <div>
+                <h3>50K+</h3>
+                <p>Happy Travelers</p>
+            </div>
+            <div>
+                <h3>100+</h3>
+                <p>Destinations</p>
+            </div>
+            <div>
+                <h3>4.8/5</h3>
+                <p>Average Rating</p>
+            </div>
+            <div>
+                <h3>24/7</h3>
+                <p>Support</p>
+            </div>
+        </div>
+        </div>
+    </section>
+  
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
+
             <!-- Brand Column -->
             <div class="footer-column brand-column">
                 <div class="footer-logo">
@@ -289,9 +321,11 @@
                     </div>
                     <span class="logo-text">Apna Safar</span>
                 </div>
+
                 <p class="brand-description">
                     Your trusted partner for memorable journeys. Book flights, hotels, and experiences with confidence.
                 </p>
+
                 <div class="social-links">
                     <a href="#" class="social-link" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
@@ -308,7 +342,7 @@
                 </div>
             </div>
 
-            <!-- Quick Links Column -->
+            <!-- Quick Links -->
             <div class="footer-column">
                 <h3 class="column-title">Quick Links</h3>
                 <ul class="footer-links">
@@ -320,7 +354,7 @@
                 </ul>
             </div>
 
-            <!-- Services Column -->
+            <!-- Services -->
             <div class="footer-column">
                 <h3 class="column-title">Services</h3>
                 <ul class="footer-links">
@@ -333,30 +367,40 @@
                 </ul>
             </div>
 
-            <!-- Contact Column -->
+            <!-- Contact -->
             <div class="footer-column">
                 <h3 class="column-title">Contact Us</h3>
                 <ul class="contact-list">
                     <li class="contact-item">
                         <i class="fas fa-envelope contact-icon"></i>
-                        <a href="mailto:support@apnasafar.com" class="contact-link">support@apnasafar.com</a>
+                        <a href="mailto:support@apnasafar.com" class="contact-link">
+                            support@apnasafar.com
+                        </a>
                     </li>
                     <li class="contact-item">
                         <i class="fas fa-phone contact-icon"></i>
-                        <a href="tel:+918001234568" class="contact-link">+91 1800 123 458</a>
+                        <a href="tel:+918001234568" class="contact-link">
+                            +91 1800 123 458
+                        </a>
                     </li>
                     <li class="contact-item">
                         <i class="fas fa-map-marker-alt contact-icon"></i>
-                        <span class="contact-text">123 Travel Street,<br>Mumbai, India 400001</span>
+                        <span class="contact-text">
+                            123 Travel Street,<br>
+                            Mumbai, India 400001
+                        </span>
                     </li>
                 </ul>
             </div>
+
         </div>
 
         <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="footer-bottom-container">
-                <p class="copyright">© 2026 Apna Safar. All rights reserved.</p>
+                <p class="copyright">
+                    © 2026 Apna Safar. All rights reserved.
+                </p>
                 <ul class="footer-bottom-links">
                     <li><a href="#" class="bottom-link">Privacy Policy</a></li>
                     <li><a href="#" class="bottom-link">Terms of Service</a></li>
@@ -370,6 +414,12 @@
         <button class="fab-button" aria-label="Add">
             <i class="fas fa-plus"></i>
         </button>
+
     </footer>
+
+  <!-- Scripts -->
+    <script src="script.js"></script>
+
+
 </body>
 </html>
