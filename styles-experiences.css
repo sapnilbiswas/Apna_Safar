@@ -1,0 +1,221 @@
+/* ===== TRAVEL EXPERIENCES SECTION ===== */
+
+.travelEXPERIENCE {
+    background-color: #fafafa;
+}
+
+.travelExp h1 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: bolder;
+}
+
+.travelExp p {
+    text-align: center;
+    font-size: large;
+    color: rgb(75, 70, 70);
+}
+
+.travel {
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 1.4%;
+}
+
+.travel h3 {
+    font-size: larger;
+}
+
+.experiences {
+    border: 0px solid black;
+    display: flex;
+    gap: 1.6%;
+    padding-left: 13%;
+}
+
+/* === Adventure Card === */
+.adventure {
+    border: 0px solid black;
+    height: 12%;
+    width: 18%;
+    border-radius: 8%;
+    padding: 1.4%;
+    background-color: #fff1e6;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 1.1s;
+}
+
+.no_fade {
+    border: 0px solid black;
+    border-radius: 19%;
+    color: white;
+    background-color: rgb(234, 122, 2);
+    padding: 9%;
+}
+
+.w_fade {
+    color: rgb(107, 103, 103);
+    padding: 11%;
+    width: 30px;
+}
+
+.adventure p {
+    text-align: justify;
+}
+
+.advenview {
+    color: rgb(234, 122, 2);
+    font-size: 120%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.advenview a {
+    color: rgba(225, 146, 81, 0.947);
+    text-decoration: none;
+}
+
+.adventure:hover {
+    transform: scale(1.03);
+    transition: 1.1s;
+    background-color: #fde8d7;
+    cursor: pointer;
+}
+
+/* === Nightlife Card === */
+.nightlife {
+    border: 0px solid black;
+    height: 12%;
+    width: 18%;
+    border-radius: 8%;
+    padding: 1.4%;
+    background-color: #f5ecff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 1.1s;
+}
+
+.nightlife svg {
+    border: 0px solid black;
+    border-radius: 19%;
+    color: white;
+    background-color: rgb(199, 16, 141);
+    padding: 8%;
+}
+
+.nightlife p {
+    text-align: justify;
+}
+
+.nightview {
+    color: rgb(199, 16, 141);
+    font-size: 120%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nightview a {
+    color: rgb(199, 16, 141);
+    text-decoration: none;
+}
+
+.nightlife:hover {
+    transform: scale(1.03);
+    transition: 1.1s;
+    background-color: #ecdbff;
+    cursor: pointer;
+}
+
+/* === Culture Card === */
+.culture {
+    border: 0px solid black;
+    height: 12%;
+    width: 18%;
+    border-radius: 8%;
+    padding: 1.4%;
+    background-color: #eaf2ff;
+    box-shadow: 0 10px 25px rgba(211, 48, 48, 0.08);
+    transition: 1.1s;
+}
+
+.culture svg {
+    border: 0px solid black;
+    border-radius: 19%;
+    color: white;
+    background-color: rgb(31, 48, 201);
+    padding: 8%;
+}
+
+.culture p {
+    text-align: justify;
+}
+
+.cultview {
+    color: rgb(31, 48, 201);
+    font-size: 120%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cultview a {
+    color: rgb(31, 48, 201);
+    text-decoration: none;
+}
+
+.culture:hover {
+    transform: scale(1.03);
+    transition: 1.1s;
+    background-color: #cedff9;
+    cursor: pointer;
+}
+
+/* === Nature Card === */
+.nature {
+    border: 0px solid black;
+    height: 12%;
+    width: 18%;
+    border-radius: 8%;
+    padding: 1.4%;
+    background-color: #eafaf0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 1.1s;
+}
+
+.nature svg {
+    border: 0px solid black;
+    border-radius: 19%;
+    color: white;
+    background-color: rgba(10, 161, 20, 0.95);
+    padding: 8%;
+}
+
+.nature p {
+    text-align: justify;
+}
+
+.natview {
+    font-size: 120%;
+    color: rgba(2, 234, 18, 0.95);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.natview a {
+    color: rgba(2, 234, 18, 0.95);
+    text-decoration: none;
+}
+
+.nature:hover {
+    transform: scale(1.03);
+    transition: 1.1s;
+    background-color: #d3f6e1;
+    cursor: pointer;
+}

@@ -1,0 +1,183 @@
+/* ===== HEADER & NAVIGATION SECTION ===== */
+
+/* === Promo Banner === */
+.promo-banner {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: var(--white);
+    padding: 0.75rem 1rem;
+}
+
+.promo-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.promo-text {
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.promo-close {
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.promo-close:hover {
+    opacity: 1;
+}
+
+/* === Header === */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
+}
+
+.header-content {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* === Logo === */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--radius-md);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* === Desktop Navigation === */
+.nav-desktop {
+    display: none;
+    gap: 0.25rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    color: var(--gray-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background: #eff6ff;
+    color: var(--primary-color);
+}
+
+/* === Header Actions === */
+.header-actions {
+    display: none;
+}
+
+.btn-login {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+    font-weight: 500;
+}
+
+.btn-login:hover {
+    background: var(--light-gray);
+}
+
+/* === Mobile Menu === */
+.mobile-menu-btn {
+    padding: 0.5rem;
+    border-radius: var(--radius-md);
+}
+
+.mobile-menu-btn:hover {
+    background: var(--light-gray);
+}
+
+.mobile-menu-btn i {
+    font-size: 1.5rem;
+}
+
+/* === Mobile Navigation === */
+.nav-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.nav-mobile.active {
+    display: flex;
+}
+
+.nav-item-mobile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.nav-item-mobile:hover {
+    background: var(--light-gray);
+}
+
+.btn-login-mobile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+}
+
+/* === Responsive Design === */
+@media (min-width: 1024px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: flex;
+    }
+
+    .header-actions {
+        display: block;
+    }
+}
