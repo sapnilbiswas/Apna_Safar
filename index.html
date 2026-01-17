@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="styles-Hero.css">
 
     <!-- Font Awesome Icons && Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -168,23 +169,44 @@
 
       <!-- TABS -->
       <div class="tabs">
-        <button class="tab active"><i class="fa-solid fa-plane"></i> Flights</button>
+        <button class="tab"><i class="fa-solid fa-plane"></i> Flights</button>
         <button class="tab"><i class="fa-solid fa-train"></i> Trains</button>
         <button class="tab"><i class="fa-solid fa-bus"></i> Buses</button>
         <button class="tab"><i class="fa-solid fa-hotel"></i> Hotels</button>
       </div>
 
       <!-- FIELDS -->
-      <input type="text" placeholder="From: City or Airport">
-      <input type="text" placeholder="To: City or Airport">
-      <input type="date">
+      <div class="input-group">
+  <i class="fa-solid fa-location-dot"></i>
+  <input type="text" placeholder="From: City or Airport" style="  margin-top: -12px;
+    margin-left: 43px;">
+</div>
 
-      <select>
-        <option>1 Adult</option>
-        <option>2 Adults</option>
-        <option>3 Adults</option>
-        <option>4 Adults</option>
-      </select>
+<div class="input-group">
+  <i class="fa-solid fa-arrow-right-arrow-left"></i>
+  <input type="text" placeholder="To: City or Station" style="  margin-top: -12px;
+    margin-left: 43px;">
+</div>
+
+<div class="input-group">
+  <i class="fa-solid fa-calendar-days" style="  margin-top: -12px;
+    margin-left: 43px;"></i>
+  <input type="date"    style=" margin-left: 52px;  margin-top: -12px;">
+</div>
+
+<div class="input-group">
+  <i class="fa-solid fa-user" style="  margin-top: -12px;
+    margin-left: 43px;"></i>
+
+  <select style="margin-left: 111px;
+    margin-top: -12px;">
+    <option>1 Adult</option>
+    <option>2 Adults</option>
+    <option>3 Adults</option>
+    <option>4 Adults</option>
+  </select>
+</div>
+
 
       <button class="search-btn">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -196,6 +218,8 @@
 
 </section>
 
+       
+  
 
 
 <!-- =======SUGGESTIONS SECTION=========== -->
@@ -770,6 +794,7 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="script-hero.js"></script>
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
