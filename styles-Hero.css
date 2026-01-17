@@ -37,7 +37,7 @@
     }
 
     .content h1 {
-      font-size: 42px;
+      font-size: 59px;
       margin-bottom: 10px;
     }
 
@@ -45,6 +45,43 @@
       margin-bottom: 30px;
       font-size: 16px;
     }
+    /* INPUT WITH ICON */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f3f3f3;
+  border-radius: 16px;
+  height: 65px;
+  padding: 0 18px;
+  gap: 12px;
+}
+
+.input-group i {
+  font-size: 25px;
+  color: #8a8a8a;
+      margin-bottom: -75px;
+          margin-top: 20px;
+}
+
+ .fa-calendar-days:before {
+    content: "\f073";
+    margin-left: -29px;
+   
+}
+.input-group input,
+.input-group select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  width: 100%;
+  height: 100%;
+     
+}
+.input-group input{
+    margin-top: -26px;
+    margin-left: 43px;
+}
 
     /* FORM BOX – WIDE & SPACIOUS */
     .form-box {
@@ -80,15 +117,16 @@
       transition: 0.3s;
     }
 
-    .tab.active {
+    .tab:hover {
       background: #ffffff;
       box-shadow: 0 0 0 3px #d1d1d1;
     }
-
-    .tab:hover {
-      background: linear-gradient(135deg, #315AFB, #9519FA);
-      color: #fff;
+    
+    .tabhover{
+      background: #ffffff;
+      box-shadow: 0 0 0 3px #d1d1d1;
     }
+    
 
     /* INPUTS – TALL & ROOMY */
     .form-box input,
