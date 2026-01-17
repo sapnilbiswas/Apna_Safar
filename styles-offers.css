@@ -1,7 +1,7 @@
 /* ===== EXCLUSIVE DEALS & OFFERS SECTION ===== */
 
 .heading {
-    margin-left: 42%;
+    margin-left: 44%;
     color: #f97316;
 }
 
@@ -29,7 +29,7 @@
 .offers-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 1%;
 }
 
@@ -39,7 +39,7 @@
     height: 15%;
     width: 45%;
     padding: 2%;
-    border-radius: 5%;
+    border-radius: 20px;
     transition: all 0.4s ease;
     cursor: pointer;
 }
@@ -97,7 +97,9 @@
 }
 
 .blue:hover {
-    background: #87CEFA;
+    /* background: #8dc8ec; */
+    background-color: #e8f5fd;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .blue.badge {
@@ -107,27 +109,71 @@
 .purple {
     background: #faf5ff;
 }
-
+.purple:hover{
+    /* background-color: rgb(250, 155, 250); */
+    background-color: #faecfc;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 .purple.badge {
     background: linear-gradient(135deg, purple, rgb(241, 193, 241));
 }
 
 .orange {
     background: #fff7ed;
+    margin-top: 2%;
 }
-
+.orange:hover{
+    /* background-color: #f2ae7d; */
+    background-color: #ffede9;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 .orange.badge {
     background: linear-gradient(135deg, orange, rgb(246, 230, 200));
 }
 
 .green {
     background: #f0fdf4;
+     margin-top: 2%;
 }
-
+.green:hover{
+    /* background-color: rgb(88, 234, 88); */
+    background-color: #e9f8ef;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 .green.badge {
     background: linear-gradient(135deg, #22c55e, rgb(190, 245, 190));
 }
 
-.grab.blue {
+.grab1{
     border: 1px solid;
+    border-radius: 10px;
+    padding: 1%;
+}
+.grab1:hover{
+     background: linear-gradient(135deg, #318CE7, #b6d7f2);
+     
+}
+.grab2{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1%;
+}
+.grab2:hover{
+    background: linear-gradient(135deg, rgb(232, 66, 232), rgb(241, 193, 241));
+}
+.grab3{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1%;
+}
+.grab3:hover{
+    background: linear-gradient(135deg, orange, rgb(246, 230, 200));
+}
+.grab4{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1%;
+}
+.grab4:hover{
+     background: linear-gradient(135deg, #22c55e, rgb(190, 245, 190));
 }
